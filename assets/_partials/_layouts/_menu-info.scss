@@ -1,0 +1,14 @@
+.menu-info {
+  background: black;
+  margin-bottom: 20px;
+  &--conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: whitesmoke;
+    img {
+      height: 200px;
+    }
+  }
+}

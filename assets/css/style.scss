@@ -1,0 +1,12 @@
+// Variavéis de configuração do bootstrap (tem que ser antes do bootstrap)
+@import "../_partials/variables";
+// Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+// Fonts
+@import "../_partials/fonts";
+// Globals
+@import "../_partials/globals";
+
+// Layouts
+@import "../_partials/_layouts/menu-info";
+ 
