@@ -1,9 +1,21 @@
 .conteudo {
   padding: 60px 20px;
+
+  &--top {
+    text-align: center;
+    h2 {
+      text-decoration: underline;
+    }
+  }
+
   ul {
     padding-left: 15px;
   }
   h2 {
+    margin-top: 10px;
+  }
+  h3 {
+    font-size: 1rem;
     margin-top: 10px;
   }
   p {
