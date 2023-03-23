@@ -1,5 +1,5 @@
 .conteudo {
-  padding: 60px 20px;
+  padding: 130px 20px 60px;
   background-color: black;
   background: url(../img/bg.jpg);
   background-repeat: no-repeat;
@@ -11,12 +11,28 @@
     -moz-box-shadow: 1px -1px 10px 0px rgba(0, 0, 0, 0.6);
     box-shadow: 1px -1px 10px 0px rgba(0, 0, 0, 0.6);
     padding: 40px 20px;
-    background-color: white;
+    background-color: #f2f3eb;
   }
 
   &--top {
     h2 {
       text-decoration: underline;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      P {
+        margin-bottom: 0;
+        display: inline;
+      }
+      img {
+        height: 120px;
+
+        border-radius: 100%;
+        object-fit: contain;
+        margin-left: 40px;
+      }
     }
   }
 
@@ -45,6 +61,14 @@ Read more: https://getbootstrap.com/docs/4.6/layout/overview/#responsive-breakpo
 */
 
 @include media-breakpoint-up(sm) {
+  .conteudo {
+    &--top {
+      text-align: center;
+      p {
+        text-align: right;
+      }
+    }
+  }
 }
 
 // 576px
@@ -58,9 +82,8 @@ Read more: https://getbootstrap.com/docs/4.6/layout/overview/#responsive-breakpo
 
 @include media-breakpoint-up(md) {
   .conteudo {
-    &--top {
-      text-align: center;
-    }
+    padding: 90px 20px 60px;
+
     &--left {
       text-align: right;
     }

@@ -17,3 +17,14 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-scrollbar",
   },
 });
+
+$(document).on("scroll", function () {
+  let nav = $(".menu-info");
+  let scroll = $(window).scrollTop();
+  if (scroll >= 10) {
+    console.log("scroll");
+    nav.addClass("scrolled");
+  } else {
+    nav.removeClass("scrolled");
+  }
+});
