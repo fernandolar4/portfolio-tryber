@@ -1,14 +1,120 @@
 .menu-info {
-  background: black;
+  background: #7a4e89;
+  padding: 20px 0;
+  z-index: 2;
+  width: 100%;
+  position: fixed;
+  transition: all ease-in-out 0.5s;
 
   &--conteudo {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    color: whitesmoke;
+    color: #f2f3eb;
+    h1 {
+      font-family: "Dosis", sans-serif;
+      font-size: 32px;
+      margin-bottom: 10px;
+      transition: all ease-in-out 1s;
+    }
     img {
       height: 200px;
     }
   }
+  &--links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      margin: 0 10px;
+      svg {
+        path {
+          transition: all ease-in-out 0.5s;
+        }
+      }
+      &:hover {
+        opacity: 1;
+        svg {
+          fill: #040101;
+
+          path {
+            fill: #040101;
+          }
+        }
+      }
+    }
+  }
 }
+.menu-info.scrolled {
+  padding: 5px 0;
+  h1 {
+    font-size: 22px;
+  }
+}
+
+/*
+=====================================================
+Small devices (landscape phones, 576px and up)
+Read more: https://getbootstrap.com/docs/4.6/layout/overview/#responsive-breakpoints
+=====================================================
+*/
+
+@include media-breakpoint-up(sm) {
+}
+
+// 576px
+
+/*
+=====================================================
+Medium devices (tablets, 768px and up)
+Read more: https://getbootstrap.com/docs/4.6/layout/overview/#responsive-breakpoints
+=====================================================
+*/
+
+@include media-breakpoint-up(md) {
+  .menu-info {
+    position: fixed;
+
+    padding: 10px 0;
+
+    &--conteudo {
+      justify-content: flex-start;
+      h1 {
+        margin-bottom: 0px;
+      }
+    }
+    &--links {
+      justify-content: flex-end;
+    }
+  }
+  .menu-info.scrolled {
+    padding: 5px 0;
+  }
+}
+
+// 768px
+
+/*
+=====================================================
+Large devices (desktops, 992px and up)
+Read more: https://getbootstrap.com/docs/4.6/layout/overview/#responsive-breakpoints
+=====================================================
+*/
+
+@include media-breakpoint-up(lg) {
+}
+
+// 992px
+
+/*
+=====================================================
+Extra large devices (large desktops, 1200px and up)
+Read more: https://getbootstrap.com/docs/4.6/layout/overview/#responsive-breakpoints
+=====================================================
+*/
+
+@include media-breakpoint-up(xl) {
+}
+
+// 1200px

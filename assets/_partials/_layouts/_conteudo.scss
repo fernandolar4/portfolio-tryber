@@ -1,5 +1,5 @@
 .conteudo {
-  padding: 60px 20px;
+  padding: 130px 20px 60px;
   background-color: black;
   background: url(../img/bg.jpg);
   background-repeat: no-repeat;
@@ -82,6 +82,8 @@ Read more: https://getbootstrap.com/docs/4.6/layout/overview/#responsive-breakpo
 
 @include media-breakpoint-up(md) {
   .conteudo {
+    padding: 90px 20px 60px;
+
     &--left {
       text-align: right;
     }
